@@ -7,6 +7,7 @@ import java.util.List;
 public class Example1 {
 
 	static List<String> solution(String[] a1, String[] a2, String[] a3) {
+		/***********************************************
 		List<String> list1 = new ArrayList<String>();
 		List<String> list2 = new ArrayList<String>();
 		List<String> list3 = new ArrayList<String>();
@@ -24,6 +25,12 @@ public class Example1 {
 		list1.retainAll(list3);
 		
 		return list1;
+		**********************************************/
+		List<String> list = new ArrayList<String>();
+        list.addAll(Arrays.asList(a1));
+        list.retainAll(Arrays.asList(a2));
+        list.retainAll(Arrays.asList(a3));
+        return list;
 
 	}
 

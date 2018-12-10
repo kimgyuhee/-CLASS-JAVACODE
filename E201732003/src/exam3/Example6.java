@@ -6,6 +6,7 @@ import java.util.Random;
 public class Example6 {
 
 	static void solution(int[] a) {
+		/**********************************
 		int count=0;
 		int n=0;
     	for(int i : a) {
@@ -16,10 +17,17 @@ public class Example6 {
     			n++;
     		}
     	}
-    	
+
     	for(int index=n; index<a.length;index++) {
     		a[index]=-1;
     	}
+		 ***********************************/
+		int index = 0;
+		for (int i = 0; i < a.length && a[i] > 0; ++i)
+			if ((a[i] % 2) != 0 && (a[i] % 3) != 0)
+				a[index++] = a[i];
+		for (int i = index; i < a.length; ++i)
+			a[i] = -1;
 
 	}
 
