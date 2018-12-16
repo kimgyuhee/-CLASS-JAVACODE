@@ -4,8 +4,8 @@ public class Exam01 {
 
 	public static double average(int... a) {
 		int sum = 0;
-		for (int i = 0; i < a.length; ++i)
-			sum += a[i];
+		for (int i : a)
+			sum += i;
 		return sum / (double)a.length;
 	}
 	//round : 반올림 pow:몇승 floor:내림 ceid:올림
@@ -26,6 +26,7 @@ public class Exam01 {
 
 	 Object[] a = getData();
 	 String s = (String[])a[0];
+	 
 	 *****************************/
 	public static void main(String[] args) {
 		int[] a = { 2, 3, 4, 5 };

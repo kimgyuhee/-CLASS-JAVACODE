@@ -10,6 +10,8 @@ public class Exam14 {
 
 	static boolean contains(int[] a, int value) {
 		return Arrays.binarySearch(a, value) >= 0;
+		// 배열 a에 value 값이 있으면 그 위치를 반환함.
+		// 배열 a에 value 값이 없으면 음수 출력
 	}
 
 	public static void main(String[] args) {
